@@ -131,9 +131,9 @@ export default defineAppConfig({
     },
     aside: {
       useLevel: false,
-      collapse: true,
+      collapse: false,
       collapseLevel: 1,
-      folderStyle: 'group',
+      folderStyle: 'default',
     },
     main: {
       breadCrumb: true,
