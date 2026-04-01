@@ -2,10 +2,10 @@ export default defineAppConfig({
   shadcnDocs: {
     site: {
       name: 'BluesMinds',
-      description: 'One API key. Hundreds of models. Zero vendor lock-in.',
+      description: 'One API key. 897+ models. 19 providers. Zero vendor lock-in.',
     },
     theme: {
-      customizable: true,
+      customizable: false,
       color: 'blue',
       radius: 1,
     },
@@ -20,40 +20,75 @@ export default defineAppConfig({
         dropdownType: 'select',
       },
       logo: {
-        light: '/logo.svg',
-        dark: '/logo-dark.svg',
+        light: 'https://api.bluesminds.com/logo.png',
+        dark: 'https://api.bluesminds.com/logo.png',
       },
       nav: [
         {
-          title: 'Documentation',
+          title: 'Quick Start',
+          links: [
+            {
+              title: 'API Quickstart',
+              to: '/quick-start/api-quickstart',
+              description: 'Make your first API call in 2 minutes',
+              icon: 'lucide:zap',
+            },
+            {
+              title: 'Claude Code',
+              to: '/quick-start/claude-code',
+              description: 'Use Claude Code via BluesMinds',
+              icon: 'lucide:terminal',
+            },
+            {
+              title: 'Codex CLI',
+              to: '/quick-start/codex-cli',
+              description: 'OpenAI Codex CLI integration',
+              icon: 'lucide:square-terminal',
+            },
+            {
+              title: 'Gemini CLI',
+              to: '/quick-start/gemini-cli',
+              description: 'Google Gemini CLI integration',
+              icon: 'lucide:sparkles',
+            },
+            {
+              title: 'Cursor',
+              to: '/quick-start/cursor',
+              description: 'AI code editor setup',
+              icon: 'lucide:mouse-pointer',
+            },
+            {
+              title: 'More Tools...',
+              to: '/quick-start/continue-dev',
+              description: 'Continue.dev, RooCode, Kilocode, and more',
+              icon: 'lucide:plus',
+            },
+          ],
+        },
+        {
+          title: 'About',
           links: [
             {
               title: 'Introduction',
-              to: '/getting-started/introduction',
+              to: '/about/introduction',
               description: 'Overview of BluesMinds API gateway',
               icon: 'lucide:info',
             },
             {
-              title: 'Quickstart',
-              to: '/getting-started/quickstart',
-              description: 'Get your first API call running in 2 minutes',
-              icon: 'lucide:zap',
+              title: 'Models & Pricing',
+              to: '/about/models-and-pricing',
+              description: 'Plans, models, RPM limits, and costs',
+              icon: 'lucide:cpu',
             },
             {
               title: 'Principles',
-              to: '/getting-started/principles',
+              to: '/about/principles',
               description: 'Core design principles behind the API',
               icon: 'lucide:compass',
             },
             {
-              title: 'Models',
-              to: '/getting-started/models',
-              description: 'Browse available models and pricing tiers',
-              icon: 'lucide:cpu',
-            },
-            {
               title: 'FAQ',
-              to: '/getting-started/faq',
+              to: '/about/faq',
               description: 'Common questions and troubleshooting',
               icon: 'lucide:help-circle',
             },
@@ -91,29 +126,6 @@ export default defineAppConfig({
               to: '/features/web-search',
               description: 'Real-time web search in LLM responses',
               icon: 'lucide:search',
-            },
-          ],
-        },
-        {
-          title: 'Integrations',
-          links: [
-            {
-              title: 'Claude Code',
-              to: '/integrations/claude-code',
-              description: 'Use Claude Code via BluesMinds',
-              icon: 'lucide:terminal',
-            },
-            {
-              title: 'Codex CLI',
-              to: '/integrations/codex-cli',
-              description: 'OpenAI Codex CLI integration',
-              icon: 'lucide:square-terminal',
-            },
-            {
-              title: 'OpenClaw',
-              to: '/integrations/openclaw',
-              description: 'OpenClaw AI agent platform',
-              icon: 'lucide:bot',
             },
           ],
         },

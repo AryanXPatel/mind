@@ -19,25 +19,32 @@ All documentation lives in `content/` using numbered directory prefixes for orde
 ```
 content/
 ├── index.md                           ← Landing page (hero, cards, CTAs)
-├── 1.getting-started/                 ← "Getting Started" section
+├── 1.quick-start/                     ← "Quick Start" section (first in sidebar)
 │   ├── _dir.yml                       ← Section title & icon
+│   ├── 1.api-quickstart.md            ← Generic API quickstart (cURL/Python/Node)
+│   ├── 2.claude-code.md               ← Claude Code integration
+│   ├── 3.codex-cli.md                 ← Codex CLI integration
+│   ├── 4.gemini-cli.md                ← Gemini via Claude Code
+│   ├── 5.cursor.md                    ← Cursor AI editor
+│   ├── 6.continue-dev.md              ← Continue.dev VS Code extension
+│   ├── 7.roocode.md                   ← RooCode VS Code extension
+│   ├── 8.kilocode.md                  ← Kilocode VS Code extension
+│   ├── 9.qwen-code.md                 ← Qwen Code CLI
+│   ├── 10.droid-cli.md                ← Droid CLI
+│   └── 11.openclaw.md                 ← OpenClaw AI agent platform
+├── 2.about/                           ← "About" section
+│   ├── _dir.yml
 │   ├── 1.introduction.md
-│   ├── 2.quickstart.md
+│   ├── 2.models-and-pricing.md        ← Combined models + pricing + providers
 │   ├── 3.principles.md
-│   ├── 4.models.md
-│   └── 5.faq.md
-├── 2.features/                        ← "Features" section
+│   └── 4.faq.md
+├── 3.features/                        ← "Features" section
 │   ├── _dir.yml
 │   ├── 1.privacy-logging.md
 │   ├── 2.provider-routing.md
 │   ├── 3.tool-calling.md
 │   ├── 4.message-transforms.md
 │   └── 5.web-search.md
-├── 3.integrations/                    ← "Integrations" section
-│   ├── _dir.yml
-│   ├── 1.claude-code.md
-│   ├── 2.codex-cli.md
-│   └── 3.openclaw.md
 └── 4.api/                             ← "API Reference" section
     ├── _dir.yml
     └── 1.bluesminds-api.md
