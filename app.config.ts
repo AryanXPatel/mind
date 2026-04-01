@@ -130,7 +130,7 @@ export default defineAppConfig({
       }],
     },
     aside: {
-      useLevel: true,
+      useLevel: false,
       collapse: true,
       collapseLevel: 1,
       folderStyle: 'group',
