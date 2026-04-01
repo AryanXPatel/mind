@@ -4,10 +4,10 @@ export default defineNuxtConfig({
   extends: ['shadcn-docs-nuxt'],
   compatibilityDate: '2024-07-06',
 
-  // Fix dayjs ESM import error from mermaid dependency
+  // Fix CJS/ESM compatibility for mermaid dependencies
   vite: {
     optimizeDeps: {
-      include: ['dayjs'],
+      include: ['dayjs', '@braintree/sanitize-url'],
     },
   },
 
